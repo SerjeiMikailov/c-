@@ -12,15 +12,16 @@ namespace Internal {
 
             if(opDef == "S") {
                 Console.WriteLine("Digite um número:");
-                int n1;
-                bool success1 = int.TryParse(Console.ReadLine(), out n1);
+                double n1;
+                bool success1 = double.TryParse(Console.ReadLine(), out n1);
 
                 Console.WriteLine("Digite outro número:");
-                int n2;
-                bool success2 = int.TryParse(Console.ReadLine(), out n2);
+                double n2;
+                bool success2 = double.TryParse(Console.ReadLine(), out n2);
 
                 if (success1 && success2) {
-                    int result = n1 + n2;
+                    double result = n1 + n2;
+                    Console.WriteLine("Seu resultado é:");
                     Console.WriteLine(result);
                 }
                 else {
@@ -29,15 +30,16 @@ namespace Internal {
             }
             else if(opDef == "M") {
                 Console.WriteLine("Digite um número:");
-                int n1;
-                bool success1 = int.TryParse(Console.ReadLine(), out n1);
+                double n1;
+                bool success1 = double.TryParse(Console.ReadLine(), out n1);
 
                 Console.WriteLine("Digite outro número:");
-                int n2;
-                bool success2 = int.TryParse(Console.ReadLine(), out n2);
+                double n2;
+                bool success2 = double.TryParse(Console.ReadLine(), out n2);
 
                 if (success1 && success2) {
-                    int result = n1 * n2;
+                    double result = n1 * n2;
+                    Console.WriteLine("Seu resultado é:");
                     Console.WriteLine(result);
                 }
                 else {
